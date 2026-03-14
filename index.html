@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiny Cafe WiFi</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial, sans-serif;
+}
+
+.container{
+position:relative;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container img{
+width:100%;
+height:100%;
+object-fit:contain;
+}
+
+/* nút kết nối */
+
+.connect-btn{
+
+position:absolute;
+bottom:270px;
+
+background:black;
+color:#FFD700;
+
+border:4px solid white;
+
+padding:18px 55px;
+font-size:24px;
+
+border-radius:60px;
+
+cursor:pointer;
+
+display:flex;
+align-items:center;
+gap:12px;
+
+box-shadow:0 0 10px #FFD700,0 0 20px #FFD700;
+
+transition:0.3s;
+
+}
+
+.connect-btn:hover{
+transform:scale(1.05);
+}
+
+/* icon wifi */
+
+.wifi-icon{
+animation:wifi 1.5s infinite;
+}
+
+@keyframes wifi{
+0%{opacity:0.3;}
+50%{opacity:1;}
+100%{opacity:0.3;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="tinycafe.jpg">
+
+<button class="connect-btn" onclick="connectWifi()">
+<i class="fa-solid fa-wifi wifi-icon"></i>
+KẾT NỐI WIFI
+</button>
+
+</div>
+
+<script>
+
+function connectWifi(){
+
+/* làm trang chào biến mất */
+
+document.body.innerHTML="";
+
+}
+
+</script>
+
+</body>
+</html>
